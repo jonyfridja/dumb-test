@@ -1,5 +1,5 @@
-<!-- <example1></example1>
-  <example2></example2> -->
+<example1></example1>
+<example2></example2>
 
 <!-- Structural Directive -->
 
@@ -8,6 +8,9 @@
 </div>
 
 <ng-template #petList>
-  <pet-filter (onFilter)="onFilterHandler($event)" [filterBy]="filterBy"></pet-filter>
+  <pet-filter
+    (onFilter)="onFilterHandler($event)"
+    [filterBy]="filterBy"
+  ></pet-filter>
   <pet-list (onPetSelected)="currPet = $event" [pets]="pets"></pet-list>
 </ng-template>

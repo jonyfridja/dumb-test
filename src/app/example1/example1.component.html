@@ -1,8 +1,12 @@
 <h2>{{ title }}</h2>
 <hr />
 
-<img src="{{ imgURL }}" alt="" />
+<img src="./assets/img/1.jpg" alt="" />
+1back
 <img [src]="imgURL" alt="" />
+1back
+<img src="../../assets/img/1.jpg"  alt="" />
+2back
 
 <input type="text" [(ngModel)]="something" (input)="greet($event)" />
 <!-- model chane - different event -->
